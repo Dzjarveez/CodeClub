@@ -55,10 +55,12 @@ iconMenu.addEventListener("click", (event) => {
     menuBody.classList.toggle("_menu");
     iconMenu.classList.toggle("_active");
     document.body.classList.toggle("_lock");
+    menuDarkSide.classList.toggle("_active");
 });
 
 menuDarkSide.addEventListener("click", (event) => {
     menuBody.classList.remove("_menu");
     iconMenu.classList.remove("_active");
     document.body.classList.remove("_lock");
+    menuDarkSide.classList.remove("_active");
 });
