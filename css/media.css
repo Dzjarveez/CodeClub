@@ -139,9 +139,20 @@
         box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0);
         padding: 16px 10px;
     }
+    .menu__sub-list._scroll {
+        box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0);
+    }
+    .courses:hover > div.menu__link._scroll {
+        color: var(--light-green-color);
+    }
+    .courses:hover .menu__arrow._scroll {
+        border-right: 2px solid var(--light-green-color);
+        border-bottom: 2px solid var(--light-green-color);
+    }
     .courses._active {
         margin-bottom: 300px;
     }
+
 }
 
 @media (max-width: 1000px) {
