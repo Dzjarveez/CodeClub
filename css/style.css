@@ -6,6 +6,10 @@
     --light-green-color: #c4e0ba;
 }
 
+body {
+    background-color: var(--dark-green-color);
+}
+
 /* Header */
 .header {
     position: fixed;
