@@ -1,0 +1,200 @@
+/* Desktop */
+@media (min-width: 1200px) {
+    .menu__list {
+        display: flex;
+        align-items: center;
+    }
+    .menu__list > li {
+        padding: 12px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 1200px) {
+    body._lock {
+        overflow: hidden;
+    }
+    .header__container {
+        min-height: 70px;
+        padding: 0px 20px;
+    } 
+    .menu__link {
+        color: #000000;
+        font-size: 20px;
+        margin: 0px 0px 28px 0px;
+    }
+    .menu__arrow {
+        border-right: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+        margin-bottom: 28px;
+    }
+    .menu__icon {
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 32px;
+        height: 22px;
+        cursor: pointer;
+    }
+    .menu__icon span,
+    .menu__icon::before,
+    .menu__icon::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        /* transition: 0.3s; */
+        background-color: #ffffff;
+        border-radius: 30px;
+    }
+    .menu__icon._active span,
+    .menu__icon._active::before,
+    .menu__icon._active::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        /* transition: 0.3s; */
+        background-color: #000000;
+        border-radius: 30px;
+    }
+    .menu__icon._scroll span,
+    .menu__icon._scroll::before,
+    .menu__icon._scroll::after {
+        background-color: #000000;
+    }
+    
+    .menu__icon::before,
+    .menu__icon::after {
+        content: "";
+    }
+    .menu__icon::before {
+        top: 0;
+    }
+    .menu__icon::after {
+        bottom: 0;
+    }
+    .menu__icon span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+    .menu__icon._active span {
+        transform: scale(0) translate(0px, -50px);
+    } 
+    .menu__icon._active::before {
+        top: 50%;
+        transform: rotate(45deg) translate(0, -50%);
+    } 
+    .menu__icon._active::after {
+        bottom: 50%;
+        transform: rotate(-45deg) translate(0px, 50%);
+    } 
+    .menu__dark-side {
+        display: none;
+    }
+    .menu._menu .menu__dark-side{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: calc(100% - 260px);
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 260px;
+        height: 100%;
+        background-color: #ffffff;
+        /* transition: 0.3s; */
+        padding: 100px 30px 30px 30px; 
+        box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+        overflow: auto;
+    }
+    .menu._menu {
+        right: 0;
+    }
+    .menu__logo img {
+        height: 70px;
+    }
+    .first-page {
+        background-color: var(--dark-green-color);
+        margin: 70px 0px 0px 0px;
+        padding: 56px 20px 96px;
+    }
+    .first-page__container {
+        gap: 10px;
+    }
+    .first-page__container img {
+        max-width: 400px;
+    }
+    .menu__sub-list {
+        padding: 24px 30px;
+        min-width: 260px;
+        top: 10px;
+    }
+    .courses._active {
+        margin-bottom: 280px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .first-page__container {
+        gap: 40px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .first-page__text {
+        max-width: 1000px;
+    }
+    .first-page__title {
+        font-size: 60px;
+        line-height: 70px;
+        margin: 0px 0px 24px 0px;
+    }
+    .first-page__sub-title {
+        font-size: 28px;
+        line-height: 48px;
+        margin: 0px 0px 28px 0px;
+    }
+    .first-page__text a {
+        padding: 20px 56px;
+        font-size: 30px;
+        margin: 0px 0px 20px 0px;
+    }
+    .first-page__text p {
+        font-size: 28px;
+        line-height: 48px;
+    }
+    .first-page__container img {
+        max-width: 600px;
+    }
+}
+@media (max-width: 700px) {
+    .first-page__title {
+        font-size: 32px;
+        line-height: 48px;
+        margin: 48px 0px 24px 0px;
+    }
+    .first-page__sub-title {
+        font-size: 24px;
+        line-height: 48px;
+        margin: 0px 0px 28px 0px;
+    }
+    .first-page__text a {
+        padding: 20px 28px;
+        font-size: 16px;
+        margin: 0px 0px 20px 0px;
+    }
+    .first-page__text p {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .first-page__container img {
+        max-width: 320px;
+    }
+}
