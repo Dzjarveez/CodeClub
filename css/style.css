@@ -217,17 +217,17 @@ body {
 .first-page__text a {
     display: inline-block;
     padding: 16px 48px;
-    background-color: #ccb1de;
+    background: #6B2599;
     border-radius: 4px;
     font-size: 20px;
     font-weight: bold;
-    color: #6b2599;
+    color: #fff;
     margin: 0px 0px 4px 0px;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 .first-page__text a:hover {
-    transform: scale(1.01);
-    background-color: #a993b9;
+    transform: scale(1.0);
+    background: #5f2188;
 }
 .first-page__text p {
     color: #ffffff;

@@ -1,0 +1,114 @@
+.third-page {
+    background-color: #fff;
+    font-family: var(--main-font);
+}
+.third-page__container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+.third-page h2 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 47px;
+    padding: 60px 0px 90px 0px;
+}
+.third-page h2 span{
+    color: #97CEA0;
+}
+.lesson-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1160px;
+    gap: 40px;
+}
+.lesson-card {
+    width: 100%;
+    box-shadow: 0px 4px 32px 0px rgba(25, 30, 36, 0.10);
+    padding: 50px 40px 50px 50px;
+    border-radius: 16px;
+    border: 1px solid #F2F4F8;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 50px;
+}
+.lesson-card__img-container_1 {background-color: #FFDA54;}
+.lesson-card__img-container_2 {background-color: #F9B8C4;}
+.lesson-card__img-container_3 {background-color: #a993b9;}
+.lesson-card__img-container_4 {background-color: #4f9f2d;}
+.lesson-card__img-container_5 {background-color: #0099FF;}
+.lesson-card__img-container {
+    width: 317px;
+    height: 379px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+.lesson-card__img-container img {
+    max-width: 260px;
+    max-height: 256px;
+}
+.lesson-card__text-column {
+    align-self: flex-start;
+}
+.lesson-card__text-column h3{
+    max-width: 300px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+.lesson-card__text-column p{
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+.lesson-card__text-column ul li {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 12px;
+    padding-left: 16px;
+    position: relative;
+}
+.lesson-card__text-column ul li::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+.lesson-card__age, .lesson-card__btn {
+    position: absolute;
+    right: 50px;
+}
+.lesson-card__age {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+    top: 50px;
+    padding: 8.5px 28px;
+    border-radius: 8px;
+    border: 1px dashed #1E2532;
+    background: #FFF;
+}
+.lesson-card__btn {
+    bottom: 50px;
+    padding: 12px 48px;
+    border-radius: 8px;
+    background: #6B2599;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 23.4px;
+}
+.lesson-card__btn:hover {
+    background: #5f2188;
+}

@@ -11,7 +11,7 @@
 .second-page__container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0px;
+    padding: 20px 20px 60px 20px;
 }
 .second-page__slides {
     display: flex;
@@ -26,6 +26,10 @@
     background-color: #fff;
     padding: 18px 24px;
     border-radius: 10px;
+    transition: 0.1s;
+}
+.second-page__slides .slide:hover {
+    box-shadow: 0px 4px 10px #0000002e;
 }
 .slide__first-line {
     display: flex;
