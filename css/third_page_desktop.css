@@ -34,6 +34,9 @@
     position: relative;
     gap: 50px;
 }
+.lesson-card:last-child {
+    margin-bottom: 100px;
+}
 .lesson-card__img-container_1 {background-color: #FFDA54;}
 .lesson-card__img-container_2 {background-color: #F9B8C4;}
 .lesson-card__img-container_3 {background-color: #a993b9;}

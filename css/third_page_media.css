@@ -24,11 +24,6 @@
         padding: 6px 18px;
         background: #ffffffc4;
     }
-    .second-page h2 {
-        font-size: 40px;
-        line-height: 47px;
-        padding: 30px 0px 50px 0px;
-    }
 }
 @media (max-width: 400px) {
     .lesson-card__img-container {
