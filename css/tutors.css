@@ -13,6 +13,9 @@
     line-height: 47px;
     padding: 20px 0px 90px 0px;
 }
+.tutors__text-line .tutor-name_mobile {
+    display: none;   
+}
 .tutor {
     display: flex;
     gap: 50px;
@@ -35,7 +38,7 @@
 .tutor__photo-line .count-students span {
     font-weight: bold;
 }
-.tutors__text-line .tutor-name {
+.tutors__text-line .tutor-name_desktop {
     font-size: 30px;
     font-weight: 600;
     line-height: 30px;
@@ -77,4 +80,25 @@
     height: 1px;
     background-color: #DEDEDE;
     margin-bottom: 77px;
+}
+
+@media (max-width: 1000px) {
+    .tutor {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tutors__text-line .tutor-name_desktop {
+        display: none;
+    }
+    .tutor-name_mobile {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .tutors__text-line {
+        max-width: 700px;
+    }
 }
