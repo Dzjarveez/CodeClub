@@ -50,8 +50,6 @@ window.addEventListener("scroll", (event) => {
         });
     };
 });
-
-
 iconMenu.addEventListener("click", (event) => {
     menuBody.classList.toggle("_menu");
     iconMenu.classList.toggle("_active");
